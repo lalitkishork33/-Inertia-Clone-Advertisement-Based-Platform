@@ -14,11 +14,11 @@ export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }
     const lenisRef = useRef<Lenis | null>(null);
 
     useEffect(() => {
-        const lenis = new Lenis({
-            duration: 1.2,
-            smooth: true,
-            smoothTouch: false,
-        });
+       const lenis = new Lenis({
+            duration: 1.2,      
+            lerp: 0.1,          
+            touchMultiplier: 2, 
+        })
         lenisRef.current = lenis;
 
         function raf (time: number) {
