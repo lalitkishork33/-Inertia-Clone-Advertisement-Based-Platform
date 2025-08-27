@@ -119,7 +119,9 @@ const Header = () => {
               {navItems.map(({ label, href, isCTA }, i) => (
                 <li
                   key={label}
-                  ref={(el) => (listRefs.current[i] = el!)}
+                   ref={(el: HTMLLIElement | null) => {
+                    if (el) listRefs.current[i] = el;
+                  }}
                   className="border-b-2"
                 >
                   <Link href={href}>
