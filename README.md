@@ -36,7 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-🚀 Inertia Clone – Advertisement Based Platform
+## 🚀 Inertia Clone – Advertisement Based Platform
 
 This project is a fullstack advertisement-based platform built with Next.js, TypeScript, TailwindCSS, GSAP, and Lenis. It replicates high-quality studio websites with smooth animations, scroll effects, and responsive design.
 
